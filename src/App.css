@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+
+/* font-family: 'Bangers', cursive;
+font-family: 'Iceland', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Orbitron', sans-serif;
+font-family: 'Press Start 2P', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+Header {
+  background-color:gold;
+  height: 110px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  font-family: 'Libre Barcode 128 Text', cursive;
+  margin: 7px;
+  font-size: 40px;
+  margin-left: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  margin: 7px 0;
+}
+
+nav ul {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  margin: 7px 0;
+  justify-content: flex-end;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li a {
+  padding: 10px 15px;
+  font-family: 'Iceland', cursive;
+  font-weight: lighter;
+  font-size: 1.55vw;
+  color: darkslategrey;
+  /* text-shadow: 0 0 10px rgba(0,0,0,0.5); */
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a:hover {
+  background: darkslategrey;
+  color: goldenrod;
+  text-shadow: none;
+  /* border-radius: 100% 0% 100% 0% / 64% 36% 64% 36%; */
+  border-radius:0% 100% 0% 100% / 100% 0% 100% 0% 
+}
+
+.logo-list{
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  background: gold;
+  padding: 20px;
+  position: sticky;
+}
+
+
+.logo {
+  max-width: 90px;
+  height: 50px;
+  transition: transform .2s;
+}
+
+.logo:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+h2 {
+  font-family: 'Press Start 2P', cursive; 
+  margin-left: 40px;
+  margin-top: 40px;
+  color: khaki;
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.about-content p {
+  font-family: 'Orbitron', sans-serif;
+  padding-top: 50px;
+  font-size: 40px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  color: ghostwhite;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            
+  margin-bottom: 30px;
 }
