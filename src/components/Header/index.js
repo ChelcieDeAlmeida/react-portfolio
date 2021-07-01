@@ -7,6 +7,7 @@ function Header() {
 
     return(
         <header>
+ 
             <h1>CHELCIE DE ALMEIDA</h1>
             <Nav></Nav>
 

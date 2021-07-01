@@ -19,7 +19,7 @@ Header {
 header h1 {
   font-family: 'Libre Barcode 128 Text', cursive;
   margin: 7px;
-  font-size: 40px;
+  font-size: 45px;
   margin-left: 40px;
 }
 
@@ -77,7 +77,6 @@ nav ul li a:hover {
 
 h2 {
   font-family: 'Press Start 2P', cursive; 
-  margin-left: 40px;
   margin-top: 40px;
   color: khaki;
   text-align: center;
@@ -90,9 +89,28 @@ h2 {
   padding-top: 50px;
   font-size: 40px;
   text-align: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 70px;
+  padding-right: 70px;
   color: ghostwhite;
+}
+
+.me {
+  border-radius: 1000px;
+  background-color: khaki;
+  height: 55px;
+  margin-right: 10px;
+}
+
+/* #avatar-me{
+  display: none;
+} */
+
+#skills-list {
+  font-family: 'Orbitron', sans-serif;
+  list-style: none;
+  text-align: center;
+  color: sandybrown;
+  font-size: 18px;
 }
 
 footer {
@@ -101,4 +119,23 @@ footer {
   width: 100%;
   height: 2.5rem;            
   margin-bottom: 30px;
+}
+
+h3 {
+  font-family: 'Iceland', cursive;
+  font-size: 50px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+  text-underline-offset: none;
+  color:gainsboro
+}
+
+#cv h3{
+  color: lightcoral;
+}
+
+#cv:link{
+  text-decoration: none !important;
+
 }

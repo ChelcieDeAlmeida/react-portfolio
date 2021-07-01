@@ -7,7 +7,13 @@ function About() {
         <section id="about-me" className="content">
 
         <article className="heading">
-         <h2>ABOUT ME</h2>
+         <h2>AB<span><img
+          src={require("../../assets/images/avatar.png").default}
+          alt="developer"
+          className="me"
+        />
+             </span>UT ME</h2>
+         
         </article>
          
           <div className="about-content">
@@ -18,6 +24,7 @@ function About() {
                  a lifelong journey of discovery and experimentation.
              </p>
           </div>
+          
       
  
      </section>

@@ -4,7 +4,8 @@ import React from "react";
 import Header from "./components/Header";
 // import Project from "./components/Project";
 import Footer from "./components/Footer";
-import About from "./components/About";
+// import About from "./components/About";
+// import Resume from "./components/Resume";
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
       
       <div>
         <main>
-        <About></About>
+        {/* <About></About> */}
+        {/* <Resume></Resume> */}
         </main>
       </div>
 
