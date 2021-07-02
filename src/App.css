@@ -105,7 +105,7 @@ h2 {
   display: none;
 } */
 
-#skills-list {
+#skills-list, label {
   font-family: 'Orbitron', sans-serif;
   list-style: none;
   text-align: center;
@@ -138,4 +138,65 @@ h3 {
 #cv:link{
   text-decoration: none !important;
 
+}
+
+
+button {
+  font-size: 25px;
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0 1px;
+  background-color: goldenrod;
+  font-family: 'Iceland';
+}
+
+button:hover {
+  opacity: .8;
+}
+
+button[disabled] {
+  cursor: default;
+  opacity: .8;
+}
+
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid slategray;
+  outline: none;
+  border-radius: 10px;
+  transition: box-shadow 0.2s;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  width: 600px;
+}
+
+input:focus {
+  border: 1px solid slategray;
+  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid cornsilk;
+	padding: 5px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+#contact-form {
+  width: 40%;
+  margin-left: 33%;
+  margin-right: 33%;
+}
+
+#contact-section {
+  justify-content: center;
 }
