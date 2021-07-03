@@ -5,7 +5,7 @@ import React from 'react';
 
 function Resume() {
   return (
-      <section>
+      <section id="resume">
           <h2>
               RESUME
           </h2>

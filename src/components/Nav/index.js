@@ -2,21 +2,24 @@ import React from "react";
 
 
 
-function Nav() {
+function Nav(props) {
+
+    const { navSelected, setNavSelected } = props;
+
     return(
         <nav>
          <ul>
-           <li>
-              <a href="#about-me">ABOUT ME</a> 
+           <li className={navSelected === "about-me" && 'navActive'}>
+              <a href="#about-me" onClick={() => setNavSelected("about-me")}>ABOUT ME</a> 
            </li>
-           <li>
-              <a href="#work">PORTFOLIO</a>
+           <li className={navSelected === "portfolio" && 'navActive'}>
+              <a href="#portfolio" onClick={() => setNavSelected("portfolio")}>PORTFOLIO</a>
            </li>  
-           <li>
-              <a href="#contact-me">CONTACT</a>
+           <li className={navSelected === "contact" && 'navActive'}>
+              <a href="#contact" onClick={() => setNavSelected("contact")}>CONTACT</a>
            </li>
-           <li>
-              <a href="./assets/images/Chelcie de Almeida Resume.pdf">RESUME</a> 
+           <li className={navSelected === "resume" && 'navActive'}>
+              <a href="#resume" onClick={() => setNavSelected("resume")}>RESUME</a> 
            </li>
          </ul>   
         </nav>

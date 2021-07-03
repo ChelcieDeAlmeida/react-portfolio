@@ -1,9 +1,15 @@
-
 /* font-family: 'Bangers', cursive;
 font-family: 'Iceland', cursive;
 font-family: 'Libre Barcode 128 Text', cursive;
 font-family: 'Orbitron', sans-serif;
 font-family: 'Press Start 2P', cursive; */
+
+:root {
+  --error: rgb(228, 46, 1);
+  --spacing-one: calc(1rem * 0.5);
+  --spacing-two: calc(1rem);
+  --spacing-five: calc(2.5rem);
+}
 
 * {
   margin: 0;
@@ -12,12 +18,12 @@ font-family: 'Press Start 2P', cursive; */
 }
 
 Header {
-  background-color:gold;
+  background-color: gold;
   height: 110px;
 }
 
 header h1 {
-  font-family: 'Libre Barcode 128 Text', cursive;
+  font-family: "Libre Barcode 128 Text", cursive;
   margin: 7px;
   font-size: 45px;
   margin-left: 40px;
@@ -38,7 +44,7 @@ nav ul {
 
 nav ul li a {
   padding: 10px 15px;
-  font-family: 'Iceland', cursive;
+  font-family: "Iceland", cursive;
   font-weight: lighter;
   font-size: 1.55vw;
   color: darkslategrey;
@@ -51,10 +57,10 @@ nav ul li a:hover {
   color: goldenrod;
   text-shadow: none;
   /* border-radius: 100% 0% 100% 0% / 64% 36% 64% 36%; */
-  border-radius:0% 100% 0% 100% / 100% 0% 100% 0% 
+  border-radius: 0% 100% 0% 100% / 100% 0% 100% 0%;
 }
 
-.logo-list{
+.logo-list {
   display: flex;
   list-style: none;
   justify-content: space-evenly;
@@ -63,29 +69,28 @@ nav ul li a:hover {
   position: sticky;
 }
 
-
 .logo {
   max-width: 90px;
   height: 50px;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 .logo:hover {
-  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(
+    1.5
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-
 h2 {
-  font-family: 'Press Start 2P', cursive; 
+  font-family: "Press Start 2P", cursive;
   margin-top: 40px;
   color: khaki;
   text-align: center;
   font-size: 50px;
 }
 
-
 .about-content p {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   padding-top: 50px;
   font-size: 40px;
   text-align: center;
@@ -101,12 +106,9 @@ h2 {
   margin-right: 10px;
 }
 
-/* #avatar-me{
-  display: none;
-} */
-
-#skills-list, label {
-  font-family: 'Orbitron', sans-serif;
+#skills-list,
+label {
+  font-family: "Orbitron", sans-serif;
   list-style: none;
   text-align: center;
   color: sandybrown;
@@ -114,55 +116,52 @@ h2 {
 }
 
 footer {
-  position: absolute;
+  position: sticky;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;            
-  margin-bottom: 30px;
+  height: 2.5rem;
+  margin-top: 20px;
 }
 
 h3 {
-  font-family: 'Iceland', cursive;
+  font-family: "Iceland", cursive;
   font-size: 50px;
   text-decoration: none;
   text-align: center;
   margin-top: 10px;
   text-underline-offset: none;
-  color:gainsboro
+  color: gainsboro;
 }
 
-#cv h3{
+#cv h3 {
   color: lightcoral;
 }
 
-#cv:link{
+#cv:link {
   text-decoration: none !important;
-
 }
-
 
 button {
   font-size: 25px;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 0.25rem 1rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   border: none;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
   background-color: goldenrod;
-  font-family: 'Iceland';
+  font-family: "Iceland";
 }
 
 button:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 button[disabled] {
   cursor: default;
-  opacity: .8;
+  opacity: 0.8;
 }
-
 
 input {
   font-size: 1rem;
@@ -178,18 +177,17 @@ input {
 
 input:focus {
   border: 1px solid slategray;
-  box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 
 textarea {
-	width: 600px;
-	height: 120px;
-	border: 3px solid cornsilk;
-	padding: 5px;
+  width: 600px;
+  height: 120px;
+  border: 3px solid cornsilk;
+  padding: 5px;
   border-radius: 10px;
   margin-top: 10px;
 }
-
 
 #contact-form {
   width: 40%;
@@ -197,6 +195,38 @@ textarea {
   margin-right: 33%;
 }
 
-#contact-section {
+#contact {
   justify-content: center;
+}
+
+.projects {
+  min-width: 48%;
+  margin: 1%;
+  padding: 1%;
+}
+
+.projects img {
+  height: 150px;
+  width: auto;
+  transition: transform 0.2s;
+  border-radius: 15px;
+  border-style: inset;
+  border-color: goldenrod;
+}
+
+.projects img:hover {
+  transform: scale(1.5);
+}
+
+#projectGrp {
+  display: flex;
+  max-width: 100%;
+  max-height: 90%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.navActive {
+  color: var(--secondary);
 }

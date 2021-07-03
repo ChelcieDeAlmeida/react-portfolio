@@ -39,7 +39,7 @@ function Contact() {
 
   return (
 
-    <section id="contact-section">
+    <section id="contact">
       <h2>GET IN TOUCH</h2>
       <br></br>
       <form id="contact-form" onSubmit={handleSubmit}>
