@@ -49,38 +49,31 @@ const Project = ({ name }) => {
   const currentPhotos = photos.filter((photo) => photo.name === name);
 
   return (
-      <div id="projectGrp">
-
-        {currentPhotos.map((image, i) => (
-          <div className="projects">
-            <img
-              src={require(`./images/${image.i}.png`).default}
-              alt={image.name}
-              className="img-thumbnail mx-1"
-              key={image.name}
-            
-            />
-            <div>
-              <div>
-                <span>{image.projectName}</span>
-              </div>
-              <div>{image.desc}</div>
-            
-              <button>
-                <a href={image.deployedApp}>Launch App</a>{" "}
-              </button>
-              <br />
-              <button>
-                <a href={image.githubRepo}>GitHub Repo</a>{" "}
-              </button>
-            </div>
+    <div id="projectGrp">
+      {currentPhotos.map((image, i) => (
+        <div className="projects">
+          <img
+            src={require(`./images/${image.i}.png`).default}
+            alt={image.name}
+            className="img-thumbnail mx-1"
+            key={image.name}
+          />
+          <div className="projName">
+            <span>{image.projectName}</span>
           </div>
-        ))}
-      </div>
-
-  
-
-        
+          <div className="projDesc">{image.desc}</div>
+          <div>
+            <button className="projectBtn">
+              <a href={image.deployedApp}>Launch App</a>{" "}
+            </button>
+           
+            <button className="projectBtn">
+              <a href={image.githubRepo}>GitHub Repo</a>{" "}
+            </button>
+          </div>
+        </div>
+      ))}
+    </div>
   );
 };
 
