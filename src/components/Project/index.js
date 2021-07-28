@@ -39,10 +39,10 @@ const Project = ({ name }) => {
     },
     {
       i: "6",
-      projectName: "Run Buddy",
+      projectName: "Buddie",
       desc: "An app that connects users to trainers to better plan their health journey",
-      deployedApp: "https://chelciedealmeida.github.io/run-buddy/",
-      githubRepo: "https://github.com/ChelcieDeAlmeida/run-buddy",
+      deployedApp: "https://buddie-app.herokuapp.com/",
+      githubRepo: "https://github.com/Unity7/buddie",
     },
   ]);
 
