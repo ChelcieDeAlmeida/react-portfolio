@@ -40,7 +40,7 @@ const Project = ({ name }) => {
     {
       i: "6",
       projectName: "Buddie",
-      desc: "An app that connects users to trainers to better plan their health journey",
+      desc: "A social media app combined with a task manager that allows for a community to manage their collective tasks",
       deployedApp: "https://buddie-app.herokuapp.com/",
       githubRepo: "https://github.com/Unity7/buddie",
     },
