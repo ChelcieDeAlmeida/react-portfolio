@@ -21,7 +21,7 @@ function Resume() {
                   <li>NODE.JS</li>
                   <li>EXPRESS.JS</li>
                   <li>RDBMS</li>
-                  <li>MONDODB</li>
+                  <li>MONGODB</li>
                   <li>REACT</li>
                   <li>PYTHON</li>
               </ul>
